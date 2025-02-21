@@ -15,7 +15,8 @@ public class Track
     private String filename;
     // Counts how many tracks has been played in a row
     private int playCount;
-
+    //here you go 38, idk
+    private int recordingYear;
     /**
      * Constructor for objects of class Track.
      * @param artist The track's artist.
@@ -26,7 +27,11 @@ public class Track
     {
         setDetails(artist, title, filename);
     }
-    
+    public void showYearOfTrack()
+    {
+        recordingYear = 1991;
+        System.out.println("It was made in the year "+ recordingYear +" (maybe...)");
+    }
     /**
      * Constructor for objects of class Track.
      * It is assumed that the file name cannot be

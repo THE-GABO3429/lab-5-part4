@@ -54,6 +54,7 @@ public class MusicOrganizer
     public void playTrack(int index)
     {
         if(indexValid(index)) {
+            player.stop();
             Track track = tracks.get(index);
             player.startPlaying(track.getFilename());
             System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
