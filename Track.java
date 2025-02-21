@@ -13,7 +13,9 @@ public class Track
     private String title;
     // Where the track is stored.
     private String filename;
-    
+    // Counts how many tracks has been played in a row
+    private int playCount;
+
     /**
      * Constructor for objects of class Track.
      * @param artist The track's artist.
@@ -85,4 +87,21 @@ public class Track
         this.filename = filename;
     }
     
+    /**
+     * Manually incraese the counter by 1
+     */
+    public int incrementPlayCounter()
+    {
+        playCount++;
+        return playCount;
+    }
+    
+    /**
+     * Reset the play counter to 0
+     */
+    public void playCounterReset()
+    {
+        playCount = 0;
+    }
 }
+
