@@ -92,7 +92,7 @@ public class Track
      */
     public int incrementPlayCounter()
     {
-        playCount++;
+        this.playCount++;
         return playCount;
     }
     
@@ -101,7 +101,14 @@ public class Track
      */
     public void playCounterReset()
     {
-        playCount = 0;
+        this.playCount = 0;
+    }
+    /**
+     * display the track counter at its curent count
+     */
+    public int showPlayCounter()
+    {
+        return playCount;
     }
 }
 
